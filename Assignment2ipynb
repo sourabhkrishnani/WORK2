@@ -1,0 +1,925 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "ca13a2d7-1320-4434-b350-ae11e1d1d5f1",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#q1\n",
+    "#Comments in Python are identified with a hash symbol, #, and extend to the end of the line."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "9a45f4ae-a949-4aed-8948-2c0ed232e06b",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#There are three ways to write a comment - as a separate line, beside the corresponding statement of code, or as a multi-line comment block."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "01e0c882-ca92-4ec8-8a54-d9449667c1d2",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Single-line comments begin with the “#” character. Anything that is written in a single line after ‘#’ is considered as a comment."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "838ea21f-580b-4b13-9cee-8f17aa256bd6",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Python does not support multi-line comments. However, there are multiple ways to overcome this issue. \n",
+    "#None of these ways are technically multi-line comments, but you can use them as one. \n",
+    "#The first way is by using # at the beginning of each line of the comment."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "bc332868-9b22-4d83-abb2-ca949002fe64",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#you can use multi-line comments.\n",
+    "#in this way \n",
+    "#including the comment character.\n",
+    "#at the beginning of each line"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "dd3298b8-dad8-49b9-b60e-d5caa025e415",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#The next way is by using string literals but not assigning them to any variables. \n",
+    "#If you do not assign a string literal to a variable, the Python interpreter ignores it. \n",
+    "#Use this to your advantage to write multi-line comments. we can either use a single (‘’) quotation or double (“”) quotation."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "81e6db7a-3e94-429b-b9eb-9e5085f49bf4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "multi line comments\n"
+     ]
+    }
+   ],
+   "source": [
+    "\"\"\"\n",
+    "this is a multi-line comment\n",
+    "with the use of multi-line strings\n",
+    "\"\"\"\n",
+    "print('multi line comments')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "d94b5287-c428-4e73-ba71-94517e40169f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#python docstring"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "be198d04-fb6e-4d43-96ef-e8983e89b8b5",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Hi , this is for introduction \n",
+      "this function is used for introduction \n"
+     ]
+    }
+   ],
+   "source": [
+    "def intro():\n",
+    "    '''this function is used for introduction '''\n",
+    "print(\"Hi , this is for introduction \")\n",
+    "#printing the docstring with __def__ attributes\n",
+    "print(intro.__doc__)\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "57484bb4-4763-458e-878b-a5965977c759",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#q2\n",
+    "#A variable is a string of characters and numbers associated with a piece of information. \n",
+    "#The assignment operator, denoted by the “=” symbol, is the operator that is used to assign values to variables in Python.\n",
+    "#for example\n",
+    "a=5\n",
+    "#here a is variable, = is assignment operator and 5 is piece of information stored in a variable a and the whole box is known as object in python. "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "954df777-ac16-4890-857f-a5bfec72f7d2",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#q3\n",
+    "'''There are two types of Type Conversion in Python:\n",
+    "\n",
+    "Implicit Type Conversion\n",
+    "Explicit Type Conversion'''"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "144050ec-1a86-4567-b053-bfecd20e9823",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'Implicit Type Conversion'"
+      ]
+     },
+     "execution_count": 3,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "'''Implicit Type Conversion'''\n",
+    "'''In Implicit type conversion of data types in Python, the Python interpreter automatically converts one data type to another\n",
+    "without any user involvement.'''"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "75df3b39-a56a-46ab-bebc-e3e629968617",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "x is of type: <class 'int'>\n",
+      "y is of type: <class 'float'>\n",
+      "20.6\n",
+      "z is of type: <class 'float'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "x = 10\n",
+    "\n",
+    "print(\"x is of type:\",type(x))\n",
+    "\n",
+    "y = 10.6\n",
+    "print(\"y is of type:\",type(y))\n",
+    "\n",
+    "z = x + y\n",
+    "\n",
+    "print(z)\n",
+    "print(\"z is of type:\",type(z))\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "a232ec91-e596-422a-86b9-5d2a3e9dea3c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "'''Explicit Type Conversion'''"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "b69a93a2-c8b4-439e-b87a-2656b2cd3412",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "'''In Explicit Type Conversion in Python, the data type is manually changed by the user as per their requirement. With explicit type conversion, \n",
+    "there is a risk of data loss since we are forcing an expression to be changed in some specific data type.'''"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "8f4bce6f-5b45-45cd-955e-b82d5b5278d3",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "'''1. int(a, base): This function converts any data type to integer. ‘Base’ specifies the base in which string is if the data type is a string.\n",
+    "2. float(): This function is used to convert any data type to a floating-point number.\n",
+    "3. ord() : This function is used to convert a character to integer.\n",
+    "4. hex() : This function is to convert integer to hexadecimal string.\n",
+    "5. oct() : This function is to convert integer to octal string.6. tuple() : This function is used to convert to a tuple.\n",
+    "7. set() : This function returns the type after converting to set.\n",
+    "8. list() : This function is used to convert any data type to a list type.9. dict() : This function is used to convert a tuple of order (key,value) into a dictionary.\n",
+    "10. str() : Used to convert integer into a string.\n",
+    "11. complex(real,imag) : This function converts real numbers to complex(real,imag) number.\n",
+    "12. chr(number): This function converts number to its corresponding ASCII character. '''\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "13ece817-5b9e-4a8c-b4fa-5f1c16cc591f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "After converting to integer base 2 : 18\n",
+      "After converting to float : 10010.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Python code to demonstrate Type conversion\n",
+    "# using int(), float()\n",
+    "\n",
+    "# initializing string\n",
+    "s = \"10010\"\n",
+    "\n",
+    "# printing string converting to int base 2\n",
+    "c = int(s,2)\n",
+    "print (\"After converting to integer base 2 : \", end=\"\")\n",
+    "print (c)\n",
+    "\n",
+    "# printing string converting to float\n",
+    "e = float(s)\n",
+    "print (\"After converting to float : \", end=\"\")\n",
+    "print (e)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "05e984ac-1071-4aee-b483-4f9655112123",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "After converting character to integer : 52\n",
+      "After converting 56 to hexadecimal string : 0x38\n",
+      "After converting 56 to octal string : 0o70\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Python code to demonstrate Type conversion\n",
+    "# using ord(), hex(), oct()\n",
+    "\n",
+    "# initializing integer\n",
+    "s = '4'\n",
+    "\n",
+    "# printing character converting to integer\n",
+    "c = ord(s)\n",
+    "print (\"After converting character to integer : \",end=\"\")\n",
+    "print (c)\n",
+    "\n",
+    "# printing integer converting to hexadecimal string\n",
+    "c = hex(56)\n",
+    "print (\"After converting 56 to hexadecimal string : \",end=\"\")\n",
+    "print (c)\n",
+    "\n",
+    "# printing integer converting to octal string\n",
+    "c = oct(56)\n",
+    "print (\"After converting 56 to octal string : \",end=\"\")\n",
+    "print (c)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "48e0d85f-3f2f-47ac-ba21-3cb17b7ae909",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "After converting string to tuple : ('p', 'w', 's', 'k', 'i', 'l', 'l', 's')\n",
+      "After converting string to set : {'k', 'l', 'i', 's', 'p', 'w'}\n",
+      "After converting string to list : ['p', 'w', 's', 'k', 'i', 'l', 'l', 's']\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Python code to demonstrate Type conversion\n",
+    "# using tuple(), set(), list()\n",
+    "\n",
+    "# initializing string\n",
+    "s = 'pwskills'\n",
+    "\n",
+    "# printing string converting to tuple\n",
+    "c = tuple(s)\n",
+    "print (\"After converting string to tuple : \",end=\"\")\n",
+    "print (c)\n",
+    "\n",
+    "# printing string converting to set\n",
+    "c = set(s)\n",
+    "print (\"After converting string to set : \",end=\"\")\n",
+    "print (c)\n",
+    "\n",
+    "# printing string converting to list\n",
+    "c = list(s)\n",
+    "print (\"After converting string to list : \",end=\"\")\n",
+    "print (c)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "16afc630-db18-4ba5-9cea-eec66f54aa7d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "After converting integer to complex number : (1+2j)\n",
+      "After converting integer to string : 1\n",
+      "After converting tuple to dictionary : {'a': 1, 'f': 2, 'g': 3}\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Python code to demonstrate Type conversion\n",
+    "# using dict(), complex(), str()\n",
+    "\n",
+    "# initializing integers\n",
+    "a = 1\n",
+    "b = 2\n",
+    "\n",
+    "# initializing tuple\n",
+    "tup = (('a', 1) ,('f', 2), ('g', 3))\n",
+    "\n",
+    "# printing integer converting to complex number\n",
+    "c = complex(1,2)\n",
+    "print (\"After converting integer to complex number : \",end=\"\")\n",
+    "print (c)\n",
+    "\n",
+    "# printing integer converting to string\n",
+    "c = str(a)\n",
+    "print (\"After converting integer to string : \",end=\"\")\n",
+    "print (c)\n",
+    "\n",
+    "# printing tuple converting to expression dictionary\n",
+    "c = dict(tup)\n",
+    "print (\"After converting tuple to dictionary : \",end=\"\")\n",
+    "print (c)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "9aea111f-3595-4143-8f34-61e08e00c351",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "L\n",
+      "M\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Convert ASCII value to characters\n",
+    "a = chr(76)\n",
+    "b = chr(77)\n",
+    "\n",
+    "print(a)\n",
+    "print(b)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "815f7f06-659a-416b-8ca8-7720b8793b84",
+   "metadata": {},
+   "source": [
+    "#### q4"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "1f571102-6a84-425e-810c-8d1ac6a0e1b4",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'Python is a well known high-level programming language. The Python script is basically a file containing code written in Python.\\nThe file containing python script has the extension ‘.py’ or can also have the extension ‘.pyw’ if it is being run on a windows machine.\\nTo run a python script, we need a python interpreter that needs to be downloaded and installed.'"
+      ]
+     },
+     "execution_count": 8,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "'''Python is a well known high-level programming language. The Python script is basically a file containing code written in Python.\n",
+    "The file containing python script has the extension ‘.py’ or can also have the extension ‘.pyw’ if it is being run on a windows machine.\n",
+    "To run a python script, we need a python interpreter that needs to be downloaded and installed.'''"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "91495d7a-bdbe-4c27-bbd8-275c13043309",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'python hello.py'"
+      ]
+     },
+     "execution_count": 10,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "'''To run a Python script store in a ‘.py’ file in command line, we have to write ‘python’ keyword before the file name in the command prompt.'''\n",
+    "'''python hello.py'''"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "97facee2-0c3c-4839-89d8-e45e7adf5bae",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#q5"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "40fdaf1a-6fd2-44f4-9e12-459cb3d12f99",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "my_list=[1,2,3,4,5]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "bc9f4fc6-adcc-4933-b42d-b71e5a8f13db",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[2, 3]"
+      ]
+     },
+     "execution_count": 23,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "my_list[1:3:1]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 44,
+   "id": "bb01c0fd-9ba2-4f33-a8e8-007c0335cafc",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "sub_list=[]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 45,
+   "id": "0737384e-ca33-41dc-aa78-ad6a8fd0943d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "sub_list.append(my_list[1:3:1])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 46,
+   "id": "f6e31516-1c48-4c1a-90d4-da3244bc037b",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[[2, 3]]"
+      ]
+     },
+     "execution_count": 46,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "sub_list"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 47,
+   "id": "296b2d86-71d2-4400-8495-0c991be822cb",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#q6"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 48,
+   "id": "918b90dd-0a88-485b-a55b-ba0f4c40997f",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "' A complex no. in mathematics is a no. which has two real part and imaginary part \\nreal part=all real no. where imaginary part =real part(i) '"
+      ]
+     },
+     "execution_count": 48,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "''' A complex no. in mathematics is a no. which has two real part and imaginary part \n",
+    "real part=all real no. where imaginary part =real part(i) '''"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 49,
+   "id": "796cbf61-417d-4cde-8a97-ad181cd681bb",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "comp=3+5j"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 50,
+   "id": "5ec99700-66e8-43d1-8b7e-4fc608aac7c6",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "(3+5j)"
+      ]
+     },
+     "execution_count": 50,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "comp"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d51de562-1570-41cd-97d2-db62a2ada040",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# In python we write j in place of i for complex no."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ebdc4f8e-d364-43d8-93e8-0b9e3c590be0",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#q7"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 51,
+   "id": "b696cfaa-6689-4f8a-a77f-6dd31f026ef1",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "age=25"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 52,
+   "id": "0e23a58a-c39d-4898-a102-1555aac61353",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "25"
+      ]
+     },
+     "execution_count": 52,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "age"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "746358f8-1b84-4e92-af39-42d89ca381e5",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "' Here we write age firstly then use assignment operator for assigning value to it 25,\\nthis is the correct method of assigning a value an variable '"
+      ]
+     },
+     "execution_count": 14,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "''' Here we write age firstly then use assignment operator for assigning value to it 25,\n",
+    "this is the correct method of assigning a value an variable '''"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "b07a1430-339d-4d15-af5a-332aefddb45b",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#q8"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 54,
+   "id": "1bcbe3d0-7117-4a3c-b2cd-399031c462bc",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "price=9.99"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 55,
+   "id": "c03faf69-59a4-43cb-be04-0903d8a65789",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "9.99"
+      ]
+     },
+     "execution_count": 55,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "price"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 56,
+   "id": "d8c4c0ac-a5b2-45a8-9553-421798620237",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "float"
+      ]
+     },
+     "execution_count": 56,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(price)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "cbae3bc6-2ecd-4c31-8e4a-5bfe1ce0bcff",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#q9"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "8f64be31-9af9-4cd8-b2c2-d709546601ad",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "name= \"sourabh krishnani\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "58444a5b-85f2-4bf0-943d-2f639fd06eef",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'sourabh krishnani'"
+      ]
+     },
+     "execution_count": 11,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "name"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "de4b1ce4-09d5-46a6-a371-1a32ee27d6d5",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#q10"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "587d9bcc-b099-46dc-96fb-4738d8be8a31",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "s=\"Hello,world!\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "id": "e05a6336-8eaa-40ef-a6ab-ceb0f3034402",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "c=s[6:11:1]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "id": "cfe9cab4-021a-4150-9871-9eee24ed229a",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'world'"
+      ]
+     },
+     "execution_count": 33,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "c"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "id": "bc8f5af7-612b-4992-a29a-1d7735b05265",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#q11"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 50,
+   "id": "f6098366-b7a2-456e-adf3-560e64ffe816",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "Is_student=True\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 41,
+   "id": "a6bf5886-1f51-4cf6-a408-c241171a484e",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 41,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "Is_student"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "690e9103-9588-4291-a679-0324f35e898e",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
